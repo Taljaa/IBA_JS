@@ -2,20 +2,22 @@
 <html>
 	<body>
 		<script>
-			var height = 4;
-			var width = 7;
+			var size = 7;
 			var line = " ";
-
-			for (var i = 0; i < height; i++) {
-				line = " ";        
-				for (var j = 0; j < width; j++) {
+			var result = "";
+			
+			for (var i = 0; i < size; i++) {
+			    line = " ";
+				for (var j = 0; j < size; j++) {
 					if ((i + j) % 2 == 0)
 						line += " ";
 					else
 						line += "#";
 				}
-				console.log(line);
+				result += line + "\n";
 				}
+				console.log(result);
+
 		</script>
 	</body>
 </html>
