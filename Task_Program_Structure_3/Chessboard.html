@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<script>
+			var height = 4;
+			var width = 7;
+			var line = " ";
+
+			for (var i = 0; i < height; i++) {
+				line = " ";        
+				for (var j = 0; j < width; j++) {
+					if ((i + j) % 2 == 0)
+						line += " ";
+					else
+						line += "#";
+				}
+				console.log(line);
+				}
+		</script>
+	</body>
+</html>
